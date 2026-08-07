@@ -1,4 +1,4 @@
-import { ArrowUpRight, LockKeyhole, MonitorCog, WalletCards } from "lucide-react";
+import { ArrowUpRight, ExternalLink, LockKeyhole, MonitorCog, WalletCards } from "lucide-react";
 import Link from "next/link";
 import type { Project } from "@/content/projects";
 
@@ -15,9 +15,21 @@ export function ProjectCard({ project }: { project: Project }) {
         <div className="chip-row">
           {project.accents.map((accent) => <span key={accent}>{accent}</span>)}
         </div>
-        <Link className="text-link" href={`/projects/${project.slug}`}>
-          Read the case study <ArrowUpRight size={18} />
-        </Link>
+        <div className="project-links">
+          <Link className="text-link" href={`/projects/${project.slug}`}>
+            Read the case study <ArrowUpRight size={18} />
+          </Link>
+          {pams ? (
+            <a
+              className="text-link project-live-link"
+              href="https://pams-kappa.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Open PAMS <ExternalLink size={17} />
+            </a>
+          ) : null}
+        </div>
       </div>
       <div className="project-preview" aria-hidden="true">
         <div className="preview-window">

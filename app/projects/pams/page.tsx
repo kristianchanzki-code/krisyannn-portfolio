@@ -4,6 +4,7 @@ import {
   ArrowLeft,
   CheckCircle2,
   Database,
+  ExternalLink,
   GitBranch,
   Layers3,
   ShieldCheck,
@@ -126,6 +127,18 @@ export default function PamsPage() {
               hundreds of field locations.
             </p>
 
+            <div className="button-row">
+              <a
+                className="button button-primary"
+                href="https://pams-kappa.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Open PAMS
+                <ExternalLink size={18} />
+              </a>
+            </div>
+
             <div className="case-meta">
               <div>
                 <small>My role</small>
@@ -138,7 +151,7 @@ export default function PamsPage() {
               <div>
                 <small>Public access</small>
                 <strong>
-                  Anonymized screenshots | Production system and source kept private
+                  Application link available | Internal data and source remain private
                 </strong>
               </div>
             </div>
@@ -396,7 +409,7 @@ export default function PamsPage() {
 
           <Reveal className="privacy-checks" delay={0.08}>
             {[
-              "The production application is not linked publicly.",
+              "The deployed application is linked publicly; access to operational records remains restricted.",
               "The source repository is not linked from the case study.",
               "Employee and supervisor names are removed.",
               "Booth codes, serials, SIM details, and asset identifiers are obscured.",
