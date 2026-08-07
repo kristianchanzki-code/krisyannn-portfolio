@@ -12,7 +12,7 @@ import { PrintButton } from "@/components/print-button";
 export const metadata: Metadata = {
   title: "Experience and Resume",
   description:
-    "Kristian Bailo - Operations, Administrative Support, and Practical Tech Builder.",
+    "Kristian Bailo - Operations & Administrative Support | Virtual Assistant.",
 };
 
 const responsibilities = [
@@ -26,13 +26,14 @@ const responsibilities = [
 const strengths = [
   "Administrative support",
   "Records and data organization",
+  "Coordination and follow-up",
+  "Operations support",
+  "SOP and documentation",
   "Workflow mapping",
   "Process improvement",
-  "SOP and documentation",
-  "Coordination and follow-up",
   "User acceptance testing",
   "Implementation support",
-  "AI-assisted building",
+  "AI-assisted work",
 ];
 
 const tools = [
@@ -57,13 +58,13 @@ export default function ExperiencePage() {
         <header className="resume-header">
           <div>
             <p className="resume-eyebrow">
-              Operations / Administrative Support / Practical Technology
+              Operations / Administrative Support / Virtual Assistance
             </p>
 
             <h1>Kristian Bailo</h1>
 
             <p className="resume-title">
-              Operations, Administrative Support, and Practical Tech Builder
+              Operations &amp; Administrative Support | Virtual Assistant
             </p>
           </div>
 
@@ -75,7 +76,7 @@ export default function ExperiencePage() {
 
             <span>
               <MapPin size={14} />
-              {siteConfig.location} | Remote-friendly
+              {siteConfig.location}
             </span>
 
             <a
@@ -94,15 +95,16 @@ export default function ExperiencePage() {
 
           <p>
             Operations professional with 2+ years of hands-on experience
-            supporting asset records, field coordination, replacements,
-            returns, repair follow-ups, documentation, and day-to-day
-            administrative work. I am comfortable organizing information,
-            keeping records accurate, coordinating with different people,
-            learning new tools, testing workflows, and helping make routine
-            work clearer and more organized. I am open to remote operations,
-            administrative and back-office support, documentation, records or
-            data work, implementation support, QA/UAT, coordination, and
-            practical technology roles where my skills can be useful.
+            supporting records, coordination, replacements, returns, repair
+            follow-ups, documentation, and day-to-day administrative work. I
+            am comfortable organizing information, keeping records accurate,
+            coordinating with different people, following up on pending work,
+            learning new tools, and helping make routine processes clearer and
+            more organized. I am now expanding into virtual assistance and
+            freelance support, while remaining open to operations,
+            administrative, back-office, documentation, QA/UAT,
+            implementation, and other support roles where these skills are
+            useful.
           </p>
         </section>
 
@@ -187,7 +189,7 @@ export default function ExperiencePage() {
           </div>
 
           <div>
-            <h2>Tools I Have Worked With</h2>
+            <h2>Tools &amp; Platforms I Have Worked With</h2>
 
             <div className="resume-tags">
               {tools.map((item) => (

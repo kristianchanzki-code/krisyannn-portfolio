@@ -1,6 +1,6 @@
 # Kristian Bailo — Portfolio
 
-A personal portfolio for Kristian Bailo, an operations professional, administrative-support professional, and practical tech builder based in the Philippines.
+A personal portfolio for Kristian Bailo, an operations and administrative support professional expanding into virtual assistance and freelance work in the Philippines.
 
 ## About
 
@@ -11,7 +11,7 @@ This portfolio showcases:
 - Workflow mapping and process improvement
 - BLACKMING PAMS
 - SINKPESO
-- AI-assisted development and practical technology work
+- AI-assisted work and practical digital tools
 
 ## Featured Projects
 

@@ -7,7 +7,7 @@ import { siteConfig } from "@/content/site";
 export const metadata: Metadata = {
   title: "Contact",
   description:
-    "Contact Kristian Bailo about remote operations, administrative support, coordination, documentation, implementation support, QA/UAT, or practical technology work.",
+    "Contact Kristian Bailo about virtual assistance, freelance projects, administrative support, operations support, documentation, QA/UAT, or practical digital work.",
 };
 
 export default function ContactPage() {
@@ -20,10 +20,11 @@ export default function ContactPage() {
           <h1>Tell me what needs to work better.</h1>
 
           <p className="page-lead">
-            I&apos;m open to remote opportunities across operations,
-            administrative and back-office support, coordination,
-            documentation, implementation support, testing / QA/UAT, and
-            practical technology work.
+            I&apos;m open to VA work, freelance projects, and administrative,
+            back-office, or operations support. If you need help organizing
+            records or data, following up on tasks, documenting a process,
+            supporting an implementation, testing a workflow, or taking
+            recurring work off your plate, I&apos;d be happy to talk.
           </p>
 
           <div className="contact-links">
@@ -51,7 +52,7 @@ export default function ContactPage() {
               <MapPin />
               <span>
                 <small>Location</small>
-                {siteConfig.location} | Remote-friendly
+                {siteConfig.location}
               </span>
             </div>
           </div>

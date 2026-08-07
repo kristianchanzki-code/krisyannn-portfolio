@@ -13,7 +13,7 @@ import { Reveal } from "@/components/reveal";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Kristian Bailo's path from hands-on operations, administrative support, and coordination to practical, AI-assisted digital product building.",
+    "Kristian Bailo's operations background, practical approach to support work, and expansion into virtual assistance and freelance opportunities.",
 };
 
 export default function AboutPage() {
@@ -30,8 +30,9 @@ export default function AboutPage() {
           <p className="page-lead">
             I&apos;m an operations professional with hands-on experience in
             records, coordination, documentation, and day-to-day support. I
-            learned to use technology because I kept seeing everyday problems
-            that deserved a better system.
+            value organization, clarity, and follow-through, and I learn and
+            use technology when it helps make the work easier to understand
+            and manage.
           </p>
         </Reveal>
 
@@ -61,7 +62,7 @@ export default function AboutPage() {
             <div className="portrait-facts">
               <span>Based in the Philippines</span>
               <span>2 years and 6 months in operations</span>
-              <span>Open to remote work</span>
+              <span>Open to VA and freelance support</span>
             </div>
           </div>
         </Reveal>
@@ -81,16 +82,24 @@ export default function AboutPage() {
             <p>
               When important information is scattered across files,
               conversations, and individual memory, even a simple follow-up
-              becomes difficult. I began thinking less about isolated tasks
-              and more about the system connecting them.
+              becomes difficult. I value clear records, visible next steps,
+              and the follow-through that keeps work from getting lost between
+              people.
             </p>
 
             <p>
-              That became the foundation for PAMS. SINKPESO came from a
-              different kind of problem—wanting a personal finance tool that
-              felt private, simple, and built around Philippine pesos. Both
-              projects follow the same principle: understand the real behavior
-              first, then shape the technology around it.
+              That practical mindset led me to PAMS and SINKPESO. I learned and
+              used AI-assisted development to turn real ideas into working
+              tools while keeping the workflow and the person using it at the
+              center. Technology supports the work; it is not the starting
+              point.
+            </p>
+
+            <p>
+              I&apos;m now bringing the same organization, follow-through, and
+              curiosity into virtual assistance and freelance support. I&apos;m
+              comfortable learning new tools, workflows, and responsibilities
+              as the work requires.
             </p>
           </Reveal>
 
@@ -129,7 +138,7 @@ export default function AboutPage() {
             <p className="eyebrow">What comes next</p>
 
             <h2>
-              I&apos;m looking for work where this mindset is useful.
+              I&apos;m ready to bring reliable support to a good-fit role or project.
             </h2>
           </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -21,10 +22,19 @@ export function SiteHeader() {
     <header className="site-header">
       <div className="shell header-inner">
         <Link className="brand" href="/" onClick={() => setOpen(false)}>
-          <span className="brand-mark" aria-hidden="true">KB</span>
+          <span className="brand-mark">
+            <Image
+              src="/images/kristian-bailo-portrait.webp"
+              alt="Kristian Bailo"
+              width={42}
+              height={42}
+              className="brand-avatar"
+              priority
+            />
+          </span>
           <span>
             <strong>Kristian Bailo</strong>
-            <small>Practical tech, built with care</small>
+            <small>Practical support, organized with care.</small>
           </span>
         </Link>
 
