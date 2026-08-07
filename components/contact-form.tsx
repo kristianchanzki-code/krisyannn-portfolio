@@ -22,13 +22,13 @@ export function ContactForm() {
         </label>
       </div>
       <label>
-        <span>What can we work on?</span>
+        <span>How can I help?</span>
         <textarea
           name="message"
           rows={7}
           required
           minLength={20}
-          placeholder="Tell me about the role, project, workflow, or problem."
+          placeholder="Tell me about the task, role, project, or support you need."
         />
       </label>
       <input className="honeypot" type="text" name="companyWebsite" tabIndex={-1} autoComplete="off" aria-hidden="true" />

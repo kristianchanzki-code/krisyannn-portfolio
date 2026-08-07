@@ -60,10 +60,10 @@ export default function ContactPage() {
 
         <Reveal className="contact-panel" delay={0.08}>
           <div className="field-note">
-            <span>Good starting point</span>
+            <span>How can I help?</span>
             <p>
-              What is happening now, what should happen instead, and who is
-              affected?
+              Tell me what you need help with, what&apos;s taking your time,
+              and what a good outcome would look like.
             </p>
           </div>
 
