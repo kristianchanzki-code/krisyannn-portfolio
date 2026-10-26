@@ -7,26 +7,24 @@ import {
   Database,
   FileText,
   Headphones,
-  Map,
   MessageSquareText,
-  Sparkles,
 } from "lucide-react";
+
 import Link from "next/link";
 import { ProjectCard } from "@/components/project-card";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { WorkbenchVisual } from "@/components/workbench-visual";
+
 import { experience } from "@/content/experience";
 import { projects } from "@/content/projects";
 import { siteConfig } from "@/content/site";
 
 const capabilities = [
-  { icon: BriefcaseBusiness, title: "Administrative Support", text: "Keeping routine work, information, and follow-ups organized." },
-  { icon: Database, title: "Records & Data Organization", text: "Maintaining accurate records, spreadsheets, databases, status information, and organized files." },
-  { icon: Headphones, title: "Coordination & Follow-up", text: "Helping tasks move between people without getting lost and keeping pending work visible." },
-  { icon: FileText, title: "Documentation & SOPs", text: "Turning recurring tasks and workflows into clear instructions and organized documentation." },
-  { icon: Map, title: "Operations Support", text: "Tracking workflows, assets, requests, status, custody, returns, repairs, and pending actions." },
-  { icon: ClipboardCheck, title: "Digital Tools & QA", text: "Learning business tools, testing websites and workflows, documenting issues, and using AI thoughtfully to support the work." },
+  { icon: Database, title: "Asset & records tracking", text: "Device, SIM, printer, assignment, return, and repair records grounded in daily operations." },
+  { icon: Headphones, title: "Operational coordination", text: "Keeping handoffs, pending actions, replacements, and repair follow-ups visible." },
+  { icon: FileText, title: "Workflow documentation", text: "Turning recurring procedures into clear records, instructions, and repeatable steps." },
+  { icon: ClipboardCheck, title: "Practical digital tools", text: "Mapping real workflows into useful tools, then testing them against day-to-day scenarios." },
 ];
 
 export default function HomePage() {
@@ -35,36 +33,29 @@ export default function HomePage() {
       <section className="hero section-pad">
         <div className="shell hero-grid">
           <Reveal className="hero-copy">
-            <div className="availability-pill"><span /> {siteConfig.availability}</div>
+
             <p className="eyebrow">{siteConfig.title}</p>
-            <h1>I help keep work <em>organized, clear, and moving.</em></h1>
+            <h1>I turn messy operations into <em>clearer systems.</em></h1>
             <p className="hero-lead">
-              I&apos;m Kristian Bailo. I have 2+ years of hands-on operations experience with records,
-              coordination, documentation, follow-ups, asset tracking, and day-to-day support. I&apos;m
-              now expanding into virtual assistance and freelance work, where I can apply those
-              skills while continuing to learn new tools and responsibilities.
+              I&apos;m Kristian Bailo, an operations professional who builds practical digital tools.
+              After 2+ years managing equipment, records, assignments, returns, and repairs, I
+              started creating systems to make that work easier to track and improve.
+              I&apos;m open to opportunities where I can contribute, grow, and keep learning,
+              while building practical skills with AI tools.
             </p>
             <div className="button-row">
-              <Link className="button button-primary" href="#work">Explore my work <ArrowDownRight size={18} /></Link>
-              <Link className="button button-secondary" href="/contact">Let&apos;s talk <MessageSquareText size={18} /></Link>
+              <Link className="button button-primary" href="#work">See what I&apos;ve built <ArrowDownRight size={18} /></Link>
+              <Link className="button button-secondary" href="/contact">Contact me <MessageSquareText size={18} /></Link>
             </div>
             <div className="hero-proof">
-              <span><BriefcaseBusiness size={17} /> 2 years and 6 months in operations</span>
-              <span><CheckCircle2 size={17} /> Reliable support + organization</span>
-              <span><Sparkles size={17} /> Always learning</span>
+              <span><BriefcaseBusiness size={17} /> 2+ years in operations</span>
+              <span><CheckCircle2 size={17} /> Built from real workflows</span>
             </div>
           </Reveal>
           <Reveal delay={0.12}><WorkbenchVisual /></Reveal>
         </div>
       </section>
 
-      <section className="story-strip">
-        <div className="shell story-strip-grid">
-          <p className="quote-mark">&ldquo;</p>
-          <p>I started with the problem, not the code.</p>
-          <span>That is still how I build.</span>
-        </div>
-      </section>
 
       <section className="section-pad">
         <div className="shell split-intro">
@@ -135,7 +126,7 @@ export default function HomePage() {
           <Reveal>
             <SectionHeading
               eyebrow="How I can help"
-              title="Reliable support for work that needs to stay organized."
+              title="What I bring to a team or project."
             />
           </Reveal>
           <div className="capability-grid">
@@ -150,25 +141,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="section-pad">
-        <div className="shell learning-path">
-          <Reveal>
-            <p className="eyebrow">Skills I&apos;m growing into</p>
-            <h2>Comfortable learning new tools, workflows, and responsibilities as the work requires.</h2>
-          </Reveal>
-          <Reveal className="path-row" delay={0.08}>
-            {["Google Workspace", "Advanced spreadsheets", "Notion / task tools", "CRM fundamentals", "Basic website updates", "Workflow automation basics"].map((item, index) => (
-              <div key={item}><span>{index + 1}</span><strong>{item}</strong></div>
-            ))}
-          </Reveal>
-        </div>
-      </section>
 
       <section className="section-pad-sm">
         <div className="shell contact-cta">
           <div>
             <p className="eyebrow">Open to a good fit</p>
-            <h2>Need reliable support keeping work organized and moving?</h2>
+            <h2>Have an operational workflow that needs a clearer system?</h2>
           </div>
           <Link className="button button-primary" href="/contact">Start a conversation <ArrowRight size={18} /></Link>
         </div>
